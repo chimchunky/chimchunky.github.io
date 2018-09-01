@@ -40,7 +40,7 @@
          height: 300px;
          width: 160px; 
          position: absolute;
-         top:850px;
+         top:880px;
          z-index:1;
          left: 0;
          overflow-x:hidden;
@@ -55,26 +55,29 @@
           background-color:white;
           padding:10px;
           border: 8px dashed black;
+          color:black;
          }
          #langsection {
           position:absolute;
-          top:1350px;
+          top:1380px;
           left:200px;
           background-color:white;
           padding:10px;
           border:8px dashed black;
+          color:black;
          }
          #relsection {
           position:absolute;
-          top:2100px;
+          top:2130px;
           left:200px;
           background-color:white;
           padding:10px;
           border:8px dashed black;
+          color:black;
          }
          #sightsection {
           position:absolute;
-          top:2657px;
+          top:2687px;
           left:200px;
           background-color:white;
           color:black;
@@ -85,28 +88,24 @@
          }
          #finale {
           position:absolute;
-          top:2700px;
+          top:2730px;
           left:670px;
           border:11px ridge gold;
-         
-          
-        
          }
          #back{
           position:absolute;
-          top:3050px;
+          top:3080px;
           left:700px;
          }
-         a:hover{
+         a .topnavlist:hover{
           background-color:rgb(255, 112, 77);
-          color:white;
+          color:black;
          }
          p {
           font-family: serif;
           padding:20px;
-          
-          
-         }
+          color:black;
+           }
          #world_map {
           margin-bottom:100px;
          }
@@ -119,7 +118,41 @@
           font-weight:bold;
           
           
+          
          }
+         #top {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #333;
+
+          }
+
+         .topnavlist {
+         float: left;
+}
+
+         .topnavlist {
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+    a.topnavlist:  {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration:none;
+    display: inline-block;
+    }
+
+         
+         
         
          </style>
      
@@ -135,8 +168,17 @@
    <h1 id="india">INDIA</h1>
    <img id="header_pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Landscape-india.svg/2000px-Landscape-india.svg.png" width="100%">
 </div>
+ <!-- TOPNAV -->
+ <ul id="top">
+  <li class="topnavlist"><a href="#india">HOME</a></li>
+  <li class="topnavlist">GOVERNMENT</li>
+  <li class="topnavlist">PICTURES</li>
+  <li class="topnavlist">ABOUT</li>
+  </ul>
+ 
   <h2 id="intro">India’s astounding diversity of religions, languages, and cultures is unique and unparalleled.
 The society of vast subcontinent, varied and complex in its rich heritage, is among the oldest in the world.</h2>
+  
   
  <!-- sidebar-->
 <div class="sidebar">
@@ -150,8 +192,7 @@ The society of vast subcontinent, varied and complex in its rich heritage, is am
 </div>
 <div id="geo_section">
   <h3 class="headers" id="geo">GEOGRAPHY</h3>
- <a href="https://www.google.com/maps/place/India/@20.5077389,73.1669237,4z/data=!4m5!3m4!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288?hl=en">
-  <img class="infopics"style="padding: 0 15px; float: left;"id="world_map" src="http://ontheworldmap.com/india/india-location-on-the-asia-map.jpg" width="430px"></a>
+  <img style="padding: 0 15px; float: left; "id="world_map" src="http://ontheworldmap.com/india/india-location-on-the-asia-map.jpg" width="430px">
   <p id="geoinfo">India lies on the Indian Plate, the northern portion of the Indo-Australian Plate, whose continental crust forms the Indian subcontinent.
   The country is situated north of the equator between 8°4' to 37°6' north latitude and 68°7' to 97°25' east longitude.
 It is the seventh-largest country in the world, with a total area of 3,287,469 square kilometres (1,269,299 sq mi).
@@ -162,8 +203,7 @@ The Palk Strait and Gulf of Mannar separate India from Sri Lanka to its immediat
 Islands across the Eight Degree Channel. India's Andaman and Nicobar Islands, some 1,200 kilometres (750 mi) southeast of the mainland, share maritime borders with Myanmar,
 Thailand and Indonesia. Kanyakumari at 8°4′41″N and 77°55′230″E is the southernmost tip of the Indian mainland, while the southernmost point in India is Indira Point on Great
 Nicobar Island. Northernmost point which is under Indian administration is Indira Col, Siachen Glacier.India's territorial waters extend into the sea to a distance of 12
-nautical miles (13.8 mi; 22.2 km) from the coast baseline.<br>
-<a href="https://en.wikipedia.org/wiki/Geography_of_India">READ MORE HERE</a><br>
+nautical miles (13.8 mi; 22.2 km) from the coast baseline.<a href="https://en.wikipedia.org/wiki/Geography_of_India">READ MORE HERE</a><br>
 </p>
  </div>
 
@@ -184,8 +224,8 @@ According to the Census of India of 2001, India has 122 major languages and 1599
 definition of the terms "language" and "dialect". The 2001 Census recorded 30 languages which were spoken by more than a million native speakers and 122 which were spoken by more than 10,000 people.
 Two contact languages have played an important role in the history of India: Persian and English.Persian was the court language during the Mughal period in India. It reigned as an
 administrative language for several centuries until the era of British colonisation.English continues to be an important language in India. It is used in higher education and in some areas of the Indian government. Hindi,
-the most commonly spoken language in India today, serves as the lingua franca across much of North and Central India. However, there have been anti-Hindi agitations in South India, most notably in the state of Tamil Nadu.</p>
-<a href="https://en.wikipedia.org/wiki/Languages_of_India#Census_of_India_figures">READ MORE HERE</a>
+the most commonly spoken language in India today, serves as the lingua franca across much of North and Central India. However, there have been anti-Hindi agitations in South India, most notably in the state of Tamil Nadu.
+<a href="https://en.wikipedia.org/wiki/Languages_of_India#Census_of_India_figures">READ MORE HERE</a></p>
 </div>
 
 <div id="relsection">
@@ -200,8 +240,8 @@ Zoroastrianism and Judaism also have an ancient history in India, and each has s
 Zoroastrianism (i.e. Parsis and Iranis) and Bahá'í Faith in the world,
 even though these religions are not native to India. Many other world religions also have a relationship
 with Indian spirituality, such as the Baha'i faith which recognises the Buddha and Krishna as manifestations of the God Almighty.
- </p>
-<a href="https://en.wikipedia.org/wiki/Religion_in_India">READ MORE HERE</a>
+
+<a href="https://en.wikipedia.org/wiki/Religion_in_India">READ MORE HERE</a></p>
 
 </div>
 
@@ -222,5 +262,4 @@ with Indian spirituality, such as the Baha'i faith which recognises the Buddha a
 <p id="back"><a href="#toc">BACK TO TOP</a></p>
 
 </body>
-
 
